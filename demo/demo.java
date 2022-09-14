@@ -1,3 +1,5 @@
+/*This program is a demonstration of Annotations in Java*/
+
 import java.util.*;
 
 class Rectangle{
@@ -7,11 +9,12 @@ class Rectangle{
 }
 
 class Square extends Rectangle{
-    @Override
+    @Override /*Override annotation will check for the method in parent class*/
     public void printNameOfClass(){
         System.out.println("Square");
     }
-	@Deprecated
+	@Deprecated /*Deprecated annotation is used to indicate that the method is old and may not be used in new codes or lines */
+
 	public void showNameOfClass(){
 		System.out.println("Sqr");
 	}
